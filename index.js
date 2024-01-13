@@ -39,8 +39,8 @@ io.on('connection',(socket)=>{
         console.log('A user has disconnected')
     })
 })
-server.listen(5001, () => {
-    console.log('Socket IO Server started on port 5001');
+server.listen(port, () => {
+    console.log('Socket IO Server started on port'+port);
   });
 
 const {signUp,login, getUsername, getUserDetails, updateProfilePic,
