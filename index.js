@@ -39,9 +39,9 @@ io.on('connection',(socket)=>{
         console.log('A user has disconnected')
     })
 })
-server.listen(port, () => {
-    console.log('Socket IO Server started on port'+port);
-  });
+// server.listen(port, () => {
+//     console.log('Socket IO Server started on port'+port);
+//   });
 
 const {signUp,login, getUsername, getUserDetails, updateProfilePic,
     getProfileDetails, getUnreads, addUnread, updateUnreads} = require('./Routers/userRouter')
@@ -396,6 +396,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(port,()=>{
+server.listen(port,()=>{
     console.log("Server started on port "+port)
 })
