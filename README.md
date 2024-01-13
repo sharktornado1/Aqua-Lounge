@@ -6,8 +6,8 @@ It is a social media site with the following features:
 
 Tech Stack:
 
-Backend: Express and NodeJS
-Frontend: React
-Database: MongoDB
-Server: Express
-Websockets: Socket.io
+  1. Backend: Express and NodeJS
+  2. Frontend: React
+  3. Database: MongoDB
+  4. Server: Express
+  5. Websockets: Socket.io
