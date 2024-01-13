@@ -392,6 +392,9 @@ app.patch('/unreads',verifyToken,async(req,res)=>{
         res.status(400).send(e.message)
     }
 })
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.listen(port,()=>{
     console.log("Server started on port "+port)
